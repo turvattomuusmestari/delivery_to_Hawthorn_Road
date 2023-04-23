@@ -4,6 +4,7 @@ import pygame as pg
 class Game:
     Level = None
     Menu = None
+    levels = {}
     def new_game():
         pass
     def update():

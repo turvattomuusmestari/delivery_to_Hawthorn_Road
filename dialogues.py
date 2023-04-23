@@ -36,7 +36,6 @@ class Option_box:
             rect = self.options_text[o].get_rect()
             w_arr.append(rect.width)
             h_arr.append(rect.height)
-            print(o.text)
         self.delta = max(h_arr) + delta
         self.rect = [pos[0], pos[1], max(w_arr), self.delta0 + delta*(len(options)-1)+max(h_arr)*len(options)]
         self.fontname =  fontname 

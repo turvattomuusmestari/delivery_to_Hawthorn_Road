@@ -1,8 +1,12 @@
-from level_main_menu import MainMenu
 from game import Game
 from dialogues import *
-        
+#levels#
+from level_main_menu import MainMenu
+from level_road_1 import Level1
+
 if __name__ == "__main__":
+    Game.levels["main menu"] = MainMenu
+    Game.levels["level 1"] = Level1
     MainMenu.start()
     while True:
         Time.tick()
